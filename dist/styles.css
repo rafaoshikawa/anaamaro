@@ -1,5 +1,52 @@
+* {
+  text-decoration: none;
+  color: inherit;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: pink;
+  background: #efebe8;
+  color: #532f17;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  border-radius: 12px;
+}
+
+body {
+  background: #efebe8;
+  color: #532f17;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font-size: 4.375rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #532f17;
+  margin-bottom: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
+}
+@media (width <= 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.logo-text-fancy {
+  font-family: "Sacramento", sans-serif;
+  font-size: 4.675rem;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
