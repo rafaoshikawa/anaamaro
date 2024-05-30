@@ -1,4 +1,45 @@
-body{
+* {
+  text-decoration: none;
+  color: inherit;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  background-color: pink;
+$ff-title: "Playfair Display", sans-serif;
+$ff-text: "Poppins", sans-serif;
+$ff-fancy-logo: "Sacramento", sans-serif;
+
+$title-size: 4.375rem;
+$text-size: 1.25rem;
+
+$primary-color: #d0b780;
+$text-color: #532f17;
+$bg-color-cream: #efebe8;
+$accent-color: #252628;
+
+$img-radius: 12px;
+
+.title {
+  font-size: $title-size;
+  font-family: $ff-title;
+  color: $text-color;
+  margin-bottom: 0.875rem;
+}
+
+.logo-text {
+  font-family: $ff-fancy-logo;
+  font-size: 4.675rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 1rem;
+}
+
+img {
+  display: block;
+  border-radius: $img-radius;
 }
