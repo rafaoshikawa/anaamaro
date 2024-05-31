@@ -173,6 +173,7 @@ header div ul:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  padding: 2.25rem;
 }
 #contato .contato-container .content h2 {
   margin-bottom: 3rem;
@@ -246,14 +247,26 @@ header div ul:last-child {
 }
 #contato .contato-container .photo {
   justify-self: end;
+  position: relative;
 }
-#contato .contato-container .photo img {
+#contato .contato-container .photo #croissant {
   overflow: hidden;
   object-fit: cover;
+  z-index: 2;
+  margin-right: 20px;
+  position: relative;
+}
+#contato .contato-container .photo #detail {
+  max-width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 20px;
 }
 @media (width <= 768px) {
   #contato .contato-container {
     grid-template-columns: 1fr;
+    padding: 1rem;
   }
   #contato .contato-container p {
     max-width: 50ch;
