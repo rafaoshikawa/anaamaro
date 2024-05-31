@@ -7,27 +7,210 @@
   padding: 0;
 }
 
-.title {
-  font-size: 4.375rem;
-  font-family: "Playfair Display", sans-serif;
+body {
+  background: #efebe8;
   color: #532f17;
-  margin-bottom: 0.875rem;
-}
-
-.logo-text {
-  font-family: "Sacramento", sans-serif;
-  font-size: 4.675rem;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1250px;
-  padding: 0 1rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
   display: block;
   border-radius: 12px;
+}
+
+body {
+  background: #efebe8;
+  color: #532f17;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font-size: 4.375rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #532f17;
+  margin-bottom: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
+}
+@media (width <= 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.logo-text-fancy {
+  font-family: "Sacramento", sans-serif;
+  font-size: 2rem;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 1rem;
+}
+
+header {
+  width: 100vw;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+header div button {
+  display: none;
+  background: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border: 1.5px solid #532f17;
+  border-radius: 6px;
+  padding: 6px;
+  width: 75px;
+}
+header div button .svg {
+  padding-block: 5px;
+  height: 15px;
+}
+header div button.active {
+  background-color: #252628;
+  color: #fff;
+}
+header div button.active .svg * {
+  fill: #fff;
+}
+header div #mobile-wpp {
+  display: none;
+  width: 75px;
+}
+@media (width <= 640px) {
+  header div #mobile-wpp {
+    display: block;
+    text-align: end;
+  }
+  header div button {
+    display: flex;
+    position: relative;
+  }
+  header div [data-burguer=list] {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0px;
+    height: 8rem;
+    z-index: 800;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+    background-color: #efebe8;
+    border-radius: 0 0 12px 0;
+  }
+  header div [data-burguer=list] ul {
+    align-items: start;
+    flex-direction: column;
+  }
+  header div [data-burguer=list] ul li:last-child {
+    display: none;
+  }
+  header div [data-burguer=list].active {
+    display: block;
+    animation: LeftToRight 0.3s forwards;
+  }
+  @keyframes LeftToRight {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+header div ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #532f17;
+}
+header div ul li:hover {
+  color: #252628;
+}
+header div ul svg {
+  height: 30px;
+  width: 30px;
+  fill: #252628;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div ul a {
+  padding: 0.5rem;
+}
+header div ul:last-child {
+  max-height: 30px;
+  padding: 0.5rem;
+}
+
+* {
+  text-decoration: none;
+  color: inherit;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #efebe8;
+  color: #532f17;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  border-radius: 12px;
+}
+
+body {
+  background: #efebe8;
+  color: #532f17;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font-size: 4.375rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #532f17;
+  margin-bottom: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
+}
+@media (width <= 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.logo-text-fancy {
+  font-family: "Sacramento", sans-serif;
+  font-size: 2rem;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

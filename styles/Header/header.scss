@@ -1,0 +1,116 @@
+@import "../Global/global";
+
+header {
+  width: 100vw;
+  @include simple-shadow;
+
+  div {
+    button {
+      display: none;
+      background: transparent;
+      border: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      border: 1.5px solid $text-color;
+      border-radius: 6px;
+      padding: 6px;
+      width: 75px;
+      .svg {
+        padding-block: 5px;
+        height: 15px;
+      }
+
+      // when button menu (utensils) is active
+      &.active {
+        background-color: $accent-color;
+        color: #fff;
+
+        .svg * {
+          fill: #fff;
+        }
+      }
+    }
+
+    #mobile-wpp {
+      display: none;
+      width: 75px;
+    }
+
+    @media (width <= $sm) {
+      #mobile-wpp {
+        display: block;
+        text-align: end;
+      }
+
+      button {
+        display: flex;
+        position: relative;
+      }
+
+      [data-burguer="list"] {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        left: 0px;
+        height: 8rem;
+        z-index: 800;
+        @include simple-shadow;
+        background-color: $bg-color-cream;
+        border-radius: 0 0 12px 0;
+        ul {
+          align-items: start;
+          flex-direction: column;
+          li:last-child {
+            display: none;
+          }
+        }
+
+        // when burguer menu is active
+        &.active {
+          display: block;
+          @include animate-left-right;
+        }
+      }
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      font-family: $ff-text;
+      font-size: 1rem;
+      color: $text-color;
+
+      li:hover {
+        color: $accent-color;
+      }
+
+      svg {
+        height: 30px;
+        width: 30px;
+        fill: $accent-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        padding: 0.5rem;
+      }
+
+      &:last-child {
+        max-height: 30px;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
