@@ -6,6 +6,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
+    // differente padding because of croissant detail
+    padding: 2.25rem;
+
     .content {
       h2 {
         margin-bottom: 3rem;
@@ -92,14 +95,27 @@
 
     .photo {
       justify-self: end;
-      img {
+      position: relative;
+      #croissant {
         overflow: hidden;
         object-fit: cover;
+        z-index: 2;
+        margin-right: 20px;
+        position: relative;
+      }
+
+      #detail {
+        max-width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: -20px;
+        left: 20px;
       }
     }
 
     @media (width <= $md) {
       grid-template-columns: 1fr;
+      padding: 1rem;
       p {
         max-width: 50ch;
       }
