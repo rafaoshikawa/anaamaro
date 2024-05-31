@@ -1,7 +1,7 @@
 @import "../Global/global";
 
 header {
-  width: 100vw;
+  width: 100%;
   @include simple-shadow;
 
   div {
@@ -36,7 +36,6 @@ header {
 
     #mobile-wpp {
       display: none;
-      width: 75px;
     }
 
     @media (width <= $sm) {
@@ -53,7 +52,7 @@ header {
       [data-burguer="list"] {
         display: none;
         position: absolute;
-        top: 4rem;
+        top: 78px;
         left: 0px;
         height: 8rem;
         z-index: 800;
@@ -79,7 +78,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 4rem;
 
     ul {
       display: flex;

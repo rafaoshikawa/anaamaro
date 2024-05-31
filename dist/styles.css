@@ -15,7 +15,8 @@ body {
 
 img {
   display: block;
-  border-radius: 12px;
+  height: auto;
+  max-width: 100%;
 }
 
 body {
@@ -26,15 +27,20 @@ body {
 
 .title {
   font-size: 4.375rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #532f17;
   margin-bottom: 0.875rem;
   font-style: italic;
   font-weight: bold;
 }
+@media (width <= 1024px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
 @media (width <= 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.375rem;
   }
 }
 
@@ -46,11 +52,11 @@ body {
 .main-container {
   margin: 0 auto;
   max-width: 1250px;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
@@ -59,7 +65,6 @@ header div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
 }
 header div button {
   display: none;
@@ -88,7 +93,6 @@ header div button.active .svg * {
 }
 header div #mobile-wpp {
   display: none;
-  width: 75px;
 }
 @media (width <= 640px) {
   header div #mobile-wpp {
@@ -102,7 +106,7 @@ header div #mobile-wpp {
   header div [data-burguer=list] {
     display: none;
     position: absolute;
-    top: 4rem;
+    top: 78px;
     left: 0px;
     height: 8rem;
     z-index: 800;
@@ -162,6 +166,103 @@ header div ul:last-child {
   padding: 0.5rem;
 }
 
+#contato {
+  background-color: #d0b780;
+}
+#contato .contato-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+#contato .contato-container .content h2 {
+  margin-bottom: 3rem;
+}
+@media (width <= 640px) {
+  #contato .contato-container .content h2 {
+    margin-bottom: 2rem;
+  }
+}
+#contato .contato-container .content .content-text {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#contato .contato-container .content .content-text div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contato .contato-container .content .content-text .wpp button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  background-color: #532f17;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  width: fit-content;
+}
+#contato .contato-container .content .content-text .wpp button:hover {
+  background-color: #7b4622;
+}
+@media (width <= 640px) {
+  #contato .contato-container .content .content-text .wpp button {
+    gap: 10px;
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
+  #contato .contato-container .content .content-text .wpp button svg {
+    height: 20px;
+  }
+}
+#contato .contato-container .content .content-text .mail a {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+#contato .contato-container .content .content-text .redes {
+  margin-top: 1rem;
+}
+#contato .contato-container .content .content-text .redes ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#contato .contato-container .content .content-text .redes ul #insta {
+  height: 40px;
+}
+#contato .contato-container .content .content-text .redes ul #face {
+  max-height: 50px !important;
+  width: 25px;
+}
+#contato .contato-container .content .content-text .redes ul li:hover svg path {
+  stroke: #dad1ca;
+}
+#contato .contato-container .photo {
+  justify-self: end;
+}
+#contato .contato-container .photo img {
+  overflow: hidden;
+  object-fit: cover;
+}
+@media (width <= 768px) {
+  #contato .contato-container {
+    grid-template-columns: 1fr;
+  }
+  #contato .contato-container p {
+    max-width: 50ch;
+  }
+  #contato .contato-container .photo {
+    display: none;
+  }
+}
+
 * {
   text-decoration: none;
   color: inherit;
@@ -179,7 +280,8 @@ body {
 
 img {
   display: block;
-  border-radius: 12px;
+  height: auto;
+  max-width: 100%;
 }
 
 body {
@@ -190,15 +292,20 @@ body {
 
 .title {
   font-size: 4.375rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #532f17;
   margin-bottom: 0.875rem;
   font-style: italic;
   font-weight: bold;
 }
+@media (width <= 1024px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
 @media (width <= 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.375rem;
   }
 }
 
@@ -210,7 +317,7 @@ body {
 .main-container {
   margin: 0 auto;
   max-width: 1250px;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

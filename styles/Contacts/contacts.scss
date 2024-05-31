@@ -1,0 +1,111 @@
+#contato {
+  background-color: $primary-color;
+
+  .contato-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    .content {
+      h2 {
+        margin-bottom: 3rem;
+
+        @media (width <= $sm) {
+          margin-bottom: 2rem;
+        }
+      }
+      .content-text {
+        font-family: $ff-text;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .wpp {
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            cursor: pointer;
+            background-color: $text-color;
+            border: none;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 12px;
+            font-family: $ff-text;
+            font-size: 1.125rem;
+            width: fit-content;
+
+            &:hover {
+              background-color: lighten($text-color, $amount: 10);
+            }
+
+            @media (width <= $sm) {
+              gap: 10px;
+              padding: 10px 15px;
+              font-size: 0.875rem;
+
+              svg {
+                height: 20px;
+              }
+            }
+          }
+        }
+
+        .mail {
+          a {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1.125rem;
+          }
+        }
+
+        .redes {
+          margin-top: 1rem;
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            #insta {
+              height: 40px;
+            }
+
+            #face {
+              max-height: 50px !important;
+              width: 25px;
+            }
+
+            li:hover svg path {
+              stroke: darken($bg-color-cream, $amount: 10);
+            }
+          }
+        }
+      }
+    }
+
+    .photo {
+      justify-self: end;
+      img {
+        overflow: hidden;
+        object-fit: cover;
+      }
+    }
+
+    @media (width <= $md) {
+      grid-template-columns: 1fr;
+      p {
+        max-width: 50ch;
+      }
+      .photo {
+        display: none;
+      }
+    }
+  }
+}
