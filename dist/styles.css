@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: #efebe8;
   color: #532f17;
@@ -46,13 +50,42 @@ body {
 
 .logo-text-fancy {
   font-family: "Sacramento", sans-serif;
-  font-size: 2rem;
+  font-size: 2.45rem;
 }
 
 .main-container {
   margin: 0 auto;
   max-width: 1250px;
   padding: 1rem;
+}
+
+.encomendarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  background-color: #532f17;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  width: fit-content;
+}
+.encomendarBtn:hover {
+  background-color: #7b4622;
+}
+@media (width <= 640px) {
+  .encomendarBtn {
+    gap: 10px;
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
+  .encomendarBtn svg {
+    height: 20px;
+  }
 }
 
 header {
@@ -166,6 +199,79 @@ header div ul:last-child {
   padding: 0.5rem;
 }
 
+.contentHero h2 {
+  font-family: "Sacramento", sans-serif;
+  font-size: 5.5rem;
+  line-height: 5rem;
+  margin-bottom: 40px;
+}
+@media (width <= 1280px) {
+  .contentHero h2 {
+    text-align: center;
+  }
+}
+@media (width <= 768px) {
+  .contentHero h2 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin: 0 auto 40px auto;
+  }
+}
+.contentHero p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  max-width: 45ch;
+  line-height: 2.2rem;
+  margin-bottom: 40px;
+}
+@media (width <= 1280px) {
+  .contentHero p {
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
+}
+@media (width <= 1280px) {
+  .contentHero .encomendarBtn {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.containerHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  margin-top: 80px;
+}
+@media (width <= 1280px) {
+  .containerHero {
+    grid-template-columns: 1fr;
+  }
+}
+.containerHero img {
+  max-width: fit-content;
+}
+@media (width <= 1280px) {
+  .containerHero img {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media (width <= 768px) {
+  .containerHero img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (width <= 640px) {
+  .containerHero img {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
 #contato {
   background-color: #d0b780;
 }
@@ -193,7 +299,7 @@ header div ul:last-child {
   flex-direction: column;
   gap: 0.5rem;
 }
-#contato .contato-container .content .content-text .wpp button {
+#contato .contato-container .content .content-text .wpp .encomendarBtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,16 +314,16 @@ header div ul:last-child {
   font-size: 1.125rem;
   width: fit-content;
 }
-#contato .contato-container .content .content-text .wpp button:hover {
+#contato .contato-container .content .content-text .wpp .encomendarBtn:hover {
   background-color: #7b4622;
 }
 @media (width <= 640px) {
-  #contato .contato-container .content .content-text .wpp button {
+  #contato .contato-container .content .content-text .wpp .encomendarBtn {
     gap: 10px;
     padding: 10px 15px;
     font-size: 0.875rem;
   }
-  #contato .contato-container .content .content-text .wpp button svg {
+  #contato .contato-container .content .content-text .wpp .encomendarBtn svg {
     height: 20px;
   }
 }
@@ -272,6 +378,10 @@ header div ul:last-child {
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: #efebe8;
   color: #532f17;
@@ -311,13 +421,42 @@ body {
 
 .logo-text-fancy {
   font-family: "Sacramento", sans-serif;
-  font-size: 2rem;
+  font-size: 2.45rem;
 }
 
 .main-container {
   margin: 0 auto;
   max-width: 1250px;
   padding: 1rem;
+}
+
+.encomendarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  background-color: #532f17;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  width: fit-content;
+}
+.encomendarBtn:hover {
+  background-color: #7b4622;
+}
+@media (width <= 640px) {
+  .encomendarBtn {
+    gap: 10px;
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
+  .encomendarBtn svg {
+    height: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
