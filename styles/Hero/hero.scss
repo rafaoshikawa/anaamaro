@@ -1,8 +1,6 @@
 .contentHero {
   h2 {
-    font-family: $ff-fancy-logo;
-    font-size: 5.5rem;
-    line-height: 5rem;
+
     margin-bottom: 40px;
     @media (width <= $xl) {
       text-align: center;

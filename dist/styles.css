@@ -17,6 +17,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.titleHero {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  color: #532f17;
+  margin-bottom: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
 img {
   display: block;
   height: auto;
@@ -200,9 +209,6 @@ header div ul:last-child {
 }
 
 .contentHero h2 {
-  font-family: "Sacramento", sans-serif;
-  font-size: 5.5rem;
-  line-height: 5rem;
   margin-bottom: 40px;
 }
 @media (width <= 1280px) {
@@ -351,24 +357,6 @@ header div ul:last-child {
 #contato .contato-container .content .content-text .redes ul li:hover svg path {
   stroke: #dad1ca;
 }
-#contato .contato-container .photo {
-  justify-self: end;
-  position: relative;
-}
-#contato .contato-container .photo #croissant {
-  overflow: hidden;
-  object-fit: cover;
-  z-index: 2;
-  margin-right: 20px;
-  position: relative;
-}
-#contato .contato-container .photo #detail {
-  max-width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: -20px;
-  left: 20px;
-}
 @media (width <= 768px) {
   #contato .contato-container {
     grid-template-columns: 1fr;
@@ -479,6 +467,15 @@ body {
   background: #efebe8;
   color: #532f17;
   -webkit-font-smoothing: antialiased;
+}
+
+.titleHero {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  color: #532f17;
+  margin-bottom: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 img {

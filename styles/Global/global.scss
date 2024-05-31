@@ -58,7 +58,14 @@ body {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
-
+.titleHero {
+  font-size: 4rem;
+  font-family: $ff-title;
+  color: $text-color;
+  margin-bottom: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
+ }
 img {
   display: block;
   height: auto;
@@ -71,6 +78,7 @@ body {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
+
 
 .title {
   font-size: $title-size;
