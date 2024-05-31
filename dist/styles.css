@@ -276,6 +276,86 @@ header div ul:last-child {
   }
 }
 
+footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(400px, 600px) 1fr;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media (width <= 640px) {
+  footer .footer-container {
+    font-size: 0.875rem;
+    grid-template-columns: auto 1fr;
+  }
+  footer .footer-container .logo {
+    order: 3;
+  }
+}
+footer .footer-container .logo img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+@media (width <= 640px) {
+  footer .footer-container .logo img {
+    width: 100px;
+  }
+}
+footer .footer-container .logo .copy {
+  margin-top: 2rem;
+}
+footer .footer-container .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .footer-container .links ul li {
+  padding: 0.25rem;
+}
+footer .footer-container .links ul li:hover {
+  color: #252628;
+}
+footer .footer-container .redes {
+  justify-self: end;
+}
+footer .footer-container .redes ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+footer .footer-container .redes ul #insta {
+  width: 40px;
+}
+footer .footer-container .redes ul #face {
+  width: 25px;
+}
+footer .footer-container .redes ul li:hover #insta > *,
+footer .footer-container .redes ul li:hover #face > * {
+  stroke: #252628;
+}
+footer .footer-container .redes ul li:hover #wpp {
+  fill: #252628;
+}
+@media (width <= 640px) {
+  footer .footer-container .redes #insta {
+    width: 30px;
+  }
+  footer .footer-container .redes #face {
+    width: 15px;
+  }
+}
+footer .credits {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+}
+footer .credits a {
+  text-decoration: underline;
+}
+
 * {
   text-decoration: none;
   color: inherit;
