@@ -384,13 +384,12 @@ header div ul:last-child {
   }
 }
 
-.main-container > .familyFood {
-  max-width: 1400px;
+.familyFood {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-.main-container > .familyFood img {
+.familyFood img {
   object-fit: cover;
   width: 550px;
   height: 600px;
