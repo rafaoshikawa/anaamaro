@@ -172,7 +172,7 @@ header div button .svg {
   height: 15px;
 }
 header div button.active {
-  background-color: #252628;
+  background-color: #d9a521;
   color: #fff;
 }
 header div button.active .svg * {
@@ -235,12 +235,12 @@ header div ul {
   color: #532f17;
 }
 header div ul li:hover {
-  color: #252628;
+  color: #d9a521;
 }
 header div ul svg {
   height: 30px;
   width: 30px;
-  fill: #252628;
+  fill: #d9a521;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,7 +371,7 @@ header div ul:last-child {
 .products p {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
-  max-width: 45ch;
+  max-width: 40ch;
   line-height: 2.2rem;
 }
 
@@ -382,6 +382,18 @@ header div ul:last-child {
   .productsContent {
     text-align: center;
   }
+}
+
+.main-container > .familyFood {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.main-container > .familyFood img {
+  object-fit: cover;
+  width: 550px;
+  height: 600px;
 }
 
 .dashed {
@@ -405,7 +417,7 @@ header div ul:last-child {
     left: -7%;
   }
 }
-@media (width <= 640px) {
+@media (width <= 850px) {
   .splashleft {
     display: none;
   }
@@ -439,6 +451,44 @@ header div ul:last-child {
     grid-row: 1;
   }
 }
+.tittleFamilyFood {
+  margin-top: 200px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .tittleFamilyFood {
+    margin-top: 0px;
+  }
+}
+
+.containerFamily {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.familyFood {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  min-width: 1000px;
+}
+.familyFood img {
+  width: 448px;
+  height: 598px;
+  object-fit: cover;
+  box-shadow: -10px 12px 12px -3px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: -10px 12px 12px -3px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: -10px 12px 12px -3px rgba(0, 0, 0, 0.34);
+}
+.familyFood #foto1 {
+  border-radius: 0px 0px 0px 50px;
+}
+.familyFood #foto3 {
+  border-radius: 0px 50px 0px 0px;
+}
+
 #contato {
   background-color: #d0b780;
 }
@@ -568,7 +618,7 @@ footer .footer-container .links ul li {
   padding: 0.25rem;
 }
 footer .footer-container .links ul li:hover {
-  color: #252628;
+  color: #d9a521;
 }
 footer .footer-container .redes {
   justify-self: end;
@@ -587,10 +637,10 @@ footer .footer-container .redes ul #face {
 }
 footer .footer-container .redes ul li:hover #insta > *,
 footer .footer-container .redes ul li:hover #face > * {
-  stroke: #252628;
+  stroke: #d9a521;
 }
 footer .footer-container .redes ul li:hover #wpp {
-  fill: #252628;
+  fill: #d9a521;
 }
 @media (width <= 640px) {
   footer .footer-container .redes #insta {

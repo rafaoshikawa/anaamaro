@@ -11,23 +11,19 @@
   }
 }
 
-.containerProducts{
+.containerProducts {
   position: relative;
 }
 .products {
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-bottom: 80px;
   gap: 40px;
   @media (width <= $sm) {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     justify-items: center;
-  margin-bottom: 40px;
-
-
-
+    margin-bottom: 40px;
   }
   img {
     border-radius: 18px;
@@ -38,47 +34,61 @@
     -moz-box-shadow: -6px 10px 17px -2px rgba(0, 0, 0, 0.27);
     transition: all ease 0.3s;
     cursor: pointer;
-    &:hover{
+    &:hover {
       transform: scale(1.1);
     }
   }
-  p{
+  p {
     font-family: $ff-text;
     font-size: $text-size;
-    max-width: 45ch;
+    max-width: 40ch;
     line-height: 2.2rem;
   }
 }
 
-.productsContent{
+.productsContent {
   margin-bottom: 40px;
   @media (width <= $sm) {
     text-align: center;
   }
 }
 
- .dashed{
+
+.main-container > .familyFood {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  img {
+    object-fit: cover;
+    width: 550px;
+    height: 600px;
+  }
+}
+
+.dashed {
   position: absolute;
-  right:50%;
+  right: 50%;
   top: 5%;
   @media (width <= $lg) {
     display: none;
   }
- }
-
- .splashleft{
-position: absolute;
-top: 68%;
-max-width: 150px;
-@media (width <= $lg) {
-  left: -7%;
 }
-@media (width <= $sm) {
-  display: none;
-}
- }
 
- .splashright{
+.splashleft {
+  position: absolute;
+  top: 68%;
+  max-width: 150px;
+  @media (width <= $lg) {
+    left: -7%;
+  }
+  @media (width <= 850px) {
+    display: none;
+  }
+}
+
+.splashright {
   position: absolute;
   max-width: 150px;
   right: 1px;
@@ -93,11 +103,46 @@ max-width: 150px;
   @media (width <= $sm) {
     display: none;
   }
+}
 
-   }
-
-   @media (width <= $sm) {
-    .products img{
-      grid-row: 1;
-    }
+@media (width <= $sm) {
+  .products img {
+    grid-row: 1;
   }
+}
+.tittleFamilyFood {
+  margin-top: 200px;
+  text-align: center;
+  @media(max-width:900px){
+    margin-top: 0px;
+  }
+}
+.containerFamily {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.familyFood {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  min-width: 1000px;
+
+  img {
+    width: 448px;
+    height: 598px;
+    object-fit: cover;
+    box-shadow: -10px 12px 12px -3px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: -10px 12px 12px -3px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: -10px 12px 12px -3px rgba(0, 0, 0, 0.34);
+  }
+
+  #foto1 {
+    border-radius: 0px 0px 0px 50px;
+  }
+  #foto3 {
+    border-radius: 0px 50px 0px 0px;
+  }
+}
