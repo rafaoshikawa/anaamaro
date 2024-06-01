@@ -530,25 +530,49 @@ header div ul:last-child {
 }
 
 #feedbacks {
+  position: relative;
   padding-bottom: 80px;
 }
 
 .feedbackContainer {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
-  overflow-x: auto;
+  overflow: hidden;
   padding: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .feedbackBaloons {
   display: flex;
   justify-content: space-between;
-  overflow-x: auto;
   min-width: 1400px;
 }
 .feedbackBaloons img {
-  width: 358px;
-  height: 288px;
+  max-width: max-content;
+}
+
+.scrollButton {
+  position: absolute;
+  top: 95%;
+  transform: translateY(-90%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.scrollButton.left {
+  left: 10%;
+}
+
+.scrollButton.right {
+  right: 10%;
+}
+
+.scrollButton img {
+  width: 60px;
+  height: 60px;
 }
 
 #contato {
