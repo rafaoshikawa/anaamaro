@@ -1,0 +1,103 @@
+#especialidades {
+  background-color: $primary-color;
+  position: relative;
+
+  h2 {
+    margin-bottom: 40px;
+    @media (width <= $sm) {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+}
+
+.containerProducts{
+  position: relative;
+}
+.products {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 40px;
+  @media (width <= $sm) {
+    grid-template-columns: 1fr ;
+    justify-items: center;
+  margin-bottom: 40px;
+
+
+
+  }
+  img {
+    border-radius: 18px;
+    width: 440px;
+    height: 350px;
+    box-shadow: -6px 10px 17px -2px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: -6px 10px 17px -2px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: -6px 10px 17px -2px rgba(0, 0, 0, 0.27);
+    transition: all ease 0.3s;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  p{
+    font-family: $ff-text;
+    font-size: $text-size;
+    max-width: 45ch;
+    line-height: 2.2rem;
+  }
+}
+
+.productsContent{
+  margin-bottom: 40px;
+  @media (width <= $sm) {
+    text-align: center;
+  }
+}
+
+ .dashed{
+  position: absolute;
+  right:50%;
+  top: 5%;
+  @media (width <= $lg) {
+    display: none;
+  }
+ }
+
+ .splashleft{
+position: absolute;
+top: 68%;
+max-width: 150px;
+@media (width <= $lg) {
+  left: -7%;
+}
+@media (width <= $sm) {
+  display: none;
+}
+ }
+
+ .splashright{
+  position: absolute;
+  max-width: 150px;
+  right: 1px;
+  @media (width <= $lg) {
+    text-align: center;
+    right: -9%;
+  }
+  @media (width <= $md) {
+    text-align: center;
+    right: -9%;
+  }
+  @media (width <= $sm) {
+    display: none;
+  }
+
+   }
+
+   @media (width <= $sm) {
+    .products img{
+      grid-row: 1;
+    }
+  }

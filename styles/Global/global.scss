@@ -47,11 +47,13 @@ $xxl: 1536px;
   margin: 0;
   padding: 0;
 }
-html{
+html, body{
   overflow-x: hidden;
 }
 
-
+.dot{
+  color: #d9a521;
+}
 
 body {
   background: $bg-color-cream;
@@ -81,11 +83,27 @@ body {
 
 
 .title {
-  font-size: $title-size;
+  font-size: 4rem;
+  font-family: $ff-title;
+  color: $text-color;
+  font-style: italic;
+  margin-bottom: 0.875rem;
+  font-weight: bold;
+
+  @media (width <= $lg) {
+    font-size: 3.5rem;
+  }
+
+  @media (width <= $md) {
+    font-size: 2.375rem;
+  }
+}
+
+.titleProducts {
+  font-size: 3rem;
   font-family: $ff-title;
   color: $text-color;
   margin-bottom: 0.875rem;
-  font-style: italic;
   font-weight: bold;
 
   @media (width <= $lg) {
@@ -104,7 +122,7 @@ body {
 
 .main-container {
   margin: 0 auto;
-  max-width: 1250px;
+  max-width: 1200px;
   padding: 1rem;
 }
 
@@ -116,7 +134,7 @@ body {
   justify-content: center;
   gap: 15px;
   cursor: pointer;
-  background-color: $text-color;
+  background-color: #d9a521;
   border: none;
   color: #fff;
   padding: 10px 30px;
@@ -138,4 +156,27 @@ body {
       height: 20px;
     }
   }
+}
+
+.custom-shape-divider-bottom-1717192187 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.moveToTop{
+  position: fixed;
+  max-width: 60px;
+  cursor: pointer;
+  left: 85%;
+  top: 90%;
+  z-index: 999;
+  color: #d9a521;
+  box-shadow: -6px 10px 17px -2px rgba(0,0,0,0.27);
+-webkit-box-shadow: -6px 10px 17px -2px rgba(0,0,0,0.27);
+-moz-box-shadow: -6px 10px 17px -2px rgba(0,0,0,0.27);
+border-radius: 50%;
 }

@@ -17,6 +17,7 @@
     <title>Ana Amaro | Confeitaria</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="main-container">
         <button
@@ -139,12 +140,18 @@
           </svg>
         </a>
       </div>
+      <a href="#home"><img class="moveToTop" src="./assets/icons/movetotop.png" alt="Mover para o topo "></a>
     </header>
+
+
+  <!-- hero section -->
     <section id="home">
       <div class="main-container">
         <div class="containerHero">
           <div class="contentHero">
-            <h2 class="titleHero">Sabores que encantam, qualidade que conquista!</h2>
+            <h2 class="titleHero">
+              Sabores que encantam, qualidade que conquista!
+            </h2>
             <p>
               Desde nossos irresistíveis bolos e tortas até nossos salgados
               crocantes e recheados, cada produto é feito com amor e atenção aos
@@ -194,30 +201,71 @@
                 >ENCOMENDAR</a
               >
             </button>
-
           </div>
-          <img src="./assets/images/brownie-hero.png" alt="Brownie">
+          <img src="./assets/images/brownie-hero.png" alt="Brownie" />
         </div>
       </div>
 
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-        id="curva-bottom"
-        style="display: block; margin: 0; padding: 0;"
-      >
-        <path
-          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-          class="shape-fill"
-          fill="#D0B780"
-          fill-opacity="1"
-        ></path>
-      </svg>
-    </section>
+      <svg  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="display: block; margin: 0; padding: 0" ><path  d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill" fill="#D0B780" fill-opacity="1" style="display: block; margin: 0; padding: -2px"></path></svg>
+    </svg>
+  </section>
 
-    <section id="contato">
+ <!-- Product section -->
+
+<section id="especialidades" style="margin-top: -1px;">
+<img class="splashleft" src="./assets/images/products/splashleft.png" alt="mancha de Café">
+<img class="splashright" src="./assets/images/products/splashright.png" alt="mancha de Café">
+<div class="main-container">
+
+  <h2 class="title">Nossas especialidades<span class="dot">.</span></h2>
+  <div class="containerProducts">
+  <img class="dashed" src="./assets/images/products/lines.png" alt="dashed line">
+
+    <div class="products">
+      <img src="./assets/images/bolo bem casado.png" alt="Bolo de Bem Casado">
+      <div class="productsContent">
+        <h3 class="titleProducts">Bolo de Bem Casado</h3>
+        <p>
+          Bem fofinho e recheado com o melhor doce de leite, o nosso Bolo de Bem Casado é o preferido dos nossos clientes. Cai muito bem em eventos, ou mesmo para consumir em casa.
+        </p>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="productsContent">
+        <h3 class="titleProducts">Croissant</h3>
+        <p>
+          Feito com a qualidade francesa, nosso Croissant fica ainda mais delicioso bem quentinho e com manteiga, sendo um dos pratos mais encomendados.
+        </p>
+      </div>
+      <img src="./assets/images/Croissant.png" alt="Croissant">
+    </div>
+
+    <div class="products">
+      <img src="./assets/images/pao bicolor.png" alt="Pão Bicolor">
+      <div class="productsContent">
+        <h3 class="titleProducts">Pão bicolor</h3>
+        <p>
+          O pão bicolor de chocolate belga é uma tentação única, combinando a suavidade do pão tradicional com a indulgência do chocolate belga em uma só mordida.
+        </p>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="productsContent">
+        <h3 class="titleProducts">Quiche</h3>
+        <p>
+          Quiche é um tipo de torta francesa feita com recheio à base de ovos e creme de leite. Servindo quente ou fria, fica uma delícia!
+        </p>
+      </div>
+      <img src="./assets/images/bolo bem casado.png" alt="Bolo de Bem Casado">
+    </div>
+
+  </div>
+</div>
+</section>
+ <!-- contact section -->
+    <section id="contato" style="margin: -1px;">
       <div class="main-container contato-container">
         <div class="content">
           <h2 class="title">Nosso contato</h2>
@@ -339,7 +387,6 @@
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
         <div class="photo">
@@ -347,11 +394,14 @@
             src="./assets/images/contato-croissant-border.png"
             alt="Foto de um croissant junto de uma xícara de café em uma mesa de madeira"
           />
-
         </div>
       </div>
     </section>
 
+
+
+
+ <!-- footer section -->
     <footer id="footer">
       <svg
         data-name="Layer 1"
@@ -502,6 +552,7 @@
         </span>
       </div>
     </footer>
+
 
     <script src="./main.js" type="module"></script>
   </body>

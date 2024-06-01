@@ -4,6 +4,7 @@
     margin-bottom: 40px;
     @media (width <= $xl) {
       text-align: center;
+
     }
     @media (width <= $md) {
       font-size: 3.5rem;
@@ -20,6 +21,10 @@
     @media (width <= $xl) {
       text-align: center;
       margin: 0 auto 20px auto;
+    }
+    @media (width <= $sm) {
+      font-size: 1rem;
+      max-width: 40ch;
     }
   }
   .encomendarBtn {
@@ -43,7 +48,8 @@
     grid-template-columns: 1fr;
   }
   img {
-    max-width: fit-content;
+
+    max-width: 600px;
     @media (width <= $xl) {
       max-width: fit-content;
       margin: 0 auto;
@@ -52,9 +58,9 @@
       max-width: 500px;
       margin: 0 auto;
     }
-    @media (width <= $sm) {
-      max-width: 350px;
-      margin: 0 auto;
-    }
+
   }
 }
+
+
+
