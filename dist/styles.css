@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -119,6 +120,37 @@ body {
   }
 }
 
+.galeriaBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: 4px solid #532f17;
+  color: #532f17;
+  font-weight: bold;
+  padding: 6px 30px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  width: fit-content;
+  transition: all ease 0.3s;
+}
+.galeriaBtn:hover {
+  transform: scale(1.1);
+}
+.galeriaBtn img {
+  max-width: 30px;
+}
+@media (width <= 640px) {
+  .galeriaBtn {
+    gap: 10px;
+    padding: 3px 15px;
+    font-size: 0.875rem;
+  }
+}
+
 .custom-shape-divider-bottom-1717192187 {
   position: absolute;
   bottom: 0;
@@ -193,9 +225,9 @@ header div #mobile-wpp {
   header div [data-burguer=list] {
     display: none;
     position: absolute;
-    top: 78px;
+    top: 88px;
     left: 0px;
-    height: 8rem;
+    height: 10rem;
     z-index: 800;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
@@ -326,6 +358,7 @@ header div ul:last-child {
 #especialidades {
   background-color: #d0b780;
   position: relative;
+  padding-bottom: 80px;
 }
 #especialidades h2 {
   margin-bottom: 40px;
@@ -393,6 +426,14 @@ header div ul:last-child {
   object-fit: cover;
   width: 550px;
   height: 600px;
+}
+
+.containerBtnProducts {
+  display: flex;
+  gap: 20px;
+  margin: 40px auto 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .dashed {
@@ -486,6 +527,28 @@ header div ul:last-child {
 }
 .familyFood #foto3 {
   border-radius: 0px 50px 0px 0px;
+}
+
+#feedbacks {
+  padding-bottom: 80px;
+}
+
+.feedbackContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.feedbackBaloons {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  min-width: 1400px;
+}
+.feedbackBaloons img {
+  width: 358px;
+  height: 288px;
 }
 
 #contato {
@@ -660,6 +723,76 @@ footer .credits a {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d0b780;
+}
+
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: -9px 10px 17px 0px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: -9px 10px 17px 0px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: -9px 10px 17px 0px rgba(0, 0, 0, 0.34);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+@media (width <= 640px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+@media (width <= 640px) {
+  .grid-wrapper .wide {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+@media (width <= 640px) {
+  .grid-wrapper .tall {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+@media (width <= 640px) {
+  .grid-wrapper .big {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
 * {
   text-decoration: none;
   color: inherit;
@@ -669,7 +802,8 @@ footer .credits a {
   padding: 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -778,6 +912,37 @@ body {
   }
   .encomendarBtn svg {
     height: 20px;
+  }
+}
+
+.galeriaBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: 4px solid #532f17;
+  color: #532f17;
+  font-weight: bold;
+  padding: 6px 30px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  width: fit-content;
+  transition: all ease 0.3s;
+}
+.galeriaBtn:hover {
+  transform: scale(1.1);
+}
+.galeriaBtn img {
+  max-width: 30px;
+}
+@media (width <= 640px) {
+  .galeriaBtn {
+    gap: 10px;
+    padding: 3px 15px;
+    font-size: 0.875rem;
   }
 }
 

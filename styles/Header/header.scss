@@ -52,9 +52,9 @@ header {
       [data-burguer="list"] {
         display: none;
         position: absolute;
-        top: 78px;
+        top: 88px;
         left: 0px;
-        height: 8rem;
+        height: 10rem;
         z-index: 800;
         @include simple-shadow;
         background-color: $bg-color-cream;
