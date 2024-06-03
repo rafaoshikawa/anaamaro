@@ -5,7 +5,7 @@ headerBurguer();
 //CODIGO DAS SETAS DO CARROSSEL DO FEEDBACK
 document.addEventListener('DOMContentLoaded', function () {
   const feedbackContainer = document.querySelector('.feedbackContainer');
-  const scrollAmount = 500;
+  const scrollAmount = 100;
 
   document.querySelector('.scrollButton.left').addEventListener('click', function () {
     feedbackContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });

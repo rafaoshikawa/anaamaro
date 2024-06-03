@@ -61,6 +61,11 @@ body {
     font-size: 2.375rem;
   }
 }
+@media (width <= 640px) {
+  .title {
+    text-align: center;
+  }
+}
 
 .titleProducts {
   font-size: 3rem;
@@ -554,8 +559,7 @@ header div ul:last-child {
 
 .scrollButton {
   position: absolute;
-  top: 95%;
-  transform: translateY(-90%);
+  top: 80%;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -565,14 +569,24 @@ header div ul:last-child {
 .scrollButton.left {
   left: 10%;
 }
+@media (width <= 640px) {
+  .scrollButton.left {
+    left: 5%;
+  }
+}
 
 .scrollButton.right {
   right: 10%;
 }
+@media (width <= 640px) {
+  .scrollButton.right {
+    right: 5%;
+  }
+}
 
 .scrollButton img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
 #contato {
@@ -878,6 +892,11 @@ body {
 @media (width <= 768px) {
   .title {
     font-size: 2.375rem;
+  }
+}
+@media (width <= 640px) {
+  .title {
+    text-align: center;
   }
 }
 
