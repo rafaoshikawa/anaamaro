@@ -1,6 +1,10 @@
 #feedbacks {
   position: relative;
   padding-bottom: 80px;
+
+  @media (width <= $md) {
+    padding-bottom: 60px;
+  }
 }
 
 .feedbackContainer {
@@ -19,7 +23,6 @@
 
   img {
     max-width: max-content;
-
   }
 }
 
@@ -39,11 +42,16 @@
 
 .scrollButton.right {
   right: 10%;
+}
 
+@media (width <= $md) {
+  .scrollButton.left,
+  .scrollButton.right {
+    bottom: -20px;
+  }
 }
 
 .scrollButton img {
   width: 60px;
   height: 60px;
-  
 }

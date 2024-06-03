@@ -37,6 +37,7 @@ footer {
 
         li {
           padding: 0.25rem;
+          width: fit-content;
           &:hover {
             color: $accent-color;
           }

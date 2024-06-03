@@ -1,10 +1,8 @@
 .contentHero {
   h2 {
-
     margin-bottom: 40px;
     @media (width <= $xl) {
       text-align: center;
-
     }
     @media (width <= $md) {
       font-size: 3.5rem;
@@ -12,6 +10,7 @@
       margin: 0 auto 40px auto;
     }
   }
+
   p {
     font-family: $ff-text;
     font-size: $text-size;
@@ -24,16 +23,15 @@
     }
     @media (width <= $sm) {
       font-size: 1rem;
-      max-width: 40ch;
     }
   }
+
   .encomendarBtn {
     @media (width <= $xl) {
       text-align: center;
       margin: 0 auto;
     }
   }
-
 }
 
 .containerHero {
@@ -42,13 +40,13 @@
   gap: 20px;
   justify-content: center;
   align-items: start;
-  margin-top: 80px;
 
   @media (width <= $xl) {
     grid-template-columns: 1fr;
+    gap: 0;
   }
-  img {
 
+  img {
     max-width: 600px;
     @media (width <= $xl) {
       max-width: fit-content;
@@ -58,9 +56,5 @@
       max-width: 500px;
       margin: 0 auto;
     }
-
   }
 }
-
-
-

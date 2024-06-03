@@ -129,13 +129,14 @@ body {
   background-color: rgba(255, 255, 255, 0);
   border: 4px solid #532f17;
   color: #532f17;
-  font-weight: bold;
+  font-weight: 500;
   padding: 6px 30px;
   border-radius: 12px;
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   width: fit-content;
   transition: all ease 0.3s;
+  text-transform: uppercase;
 }
 .galeriaBtn:hover {
   transform: scale(1.1);
@@ -276,6 +277,7 @@ header div ul svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
 }
 header div ul a {
   padding: 0.5rem;
@@ -283,6 +285,9 @@ header div ul a {
 header div ul:last-child {
   max-height: 30px;
   padding: 0.5rem;
+}
+header div ul:last-child:hover svg {
+  fill: #532f17 !important;
 }
 
 .contentHero h2 {
@@ -316,7 +321,6 @@ header div ul:last-child {
 @media (width <= 640px) {
   .contentHero p {
     font-size: 1rem;
-    max-width: 40ch;
   }
 }
 @media (width <= 1280px) {
@@ -332,11 +336,11 @@ header div ul:last-child {
   gap: 20px;
   justify-content: center;
   align-items: start;
-  margin-top: 80px;
 }
 @media (width <= 1280px) {
   .containerHero {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 .containerHero img {
@@ -397,9 +401,11 @@ header div ul:last-child {
   -moz-box-shadow: -6px 10px 17px -2px rgba(0, 0, 0, 0.27);
   transition: all ease 0.3s;
   cursor: pointer;
+  justify-self: center;
+  object-fit: cover;
 }
 .products img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .products p {
   font-family: "Poppins", sans-serif;
@@ -424,6 +430,7 @@ header div ul:last-child {
 }
 .familyFood img {
   object-fit: cover;
+  z-index: 2;
   width: 550px;
   height: 600px;
 }
@@ -451,6 +458,7 @@ header div ul:last-child {
   position: absolute;
   top: 68%;
   max-width: 150px;
+  z-index: 1;
 }
 @media (width <= 1024px) {
   .splashleft {
@@ -524,6 +532,8 @@ header div ul:last-child {
 }
 .familyFood #foto1 {
   border-radius: 0px 0px 0px 50px;
+  position: relative;
+  z-index: 2;
 }
 .familyFood #foto3 {
   border-radius: 0px 50px 0px 0px;
@@ -532,6 +542,11 @@ header div ul:last-child {
 #feedbacks {
   position: relative;
   padding-bottom: 80px;
+}
+@media (width <= 768px) {
+  #feedbacks {
+    padding-bottom: 60p;
+  }
 }
 
 .feedbackContainer {
@@ -570,6 +585,12 @@ header div ul:last-child {
   right: 10%;
 }
 
+@media (width <= 768px) {
+  .scrollButton.left,
+  .scrollButton.right {
+    bottom: -20px;
+  }
+}
 .scrollButton img {
   width: 60px;
   height: 60px;
@@ -702,6 +723,7 @@ footer .footer-container .links ul {
 }
 footer .footer-container .links ul li {
   padding: 0.25rem;
+  width: fit-content;
 }
 footer .footer-container .links ul li:hover {
   color: #d9a521;
@@ -948,13 +970,14 @@ body {
   background-color: rgba(255, 255, 255, 0);
   border: 4px solid #532f17;
   color: #532f17;
-  font-weight: bold;
+  font-weight: 500;
   padding: 6px 30px;
   border-radius: 12px;
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   width: fit-content;
   transition: all ease 0.3s;
+  text-transform: uppercase;
 }
 .galeriaBtn:hover {
   transform: scale(1.1);

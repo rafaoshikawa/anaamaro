@@ -99,6 +99,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.2s ease;
       }
 
       a {
@@ -108,6 +109,9 @@ header {
       &:last-child {
         max-height: 30px;
         padding: 0.5rem;
+        &:hover svg {
+          fill: $text-color !important;
+        }
       }
     }
   }
