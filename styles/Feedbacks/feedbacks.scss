@@ -28,8 +28,7 @@
 
 .scrollButton {
   position: absolute;
-  top: 95%;
-  transform: translateY(-90%);
+  top: 80%;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -38,10 +37,16 @@
 
 .scrollButton.left {
   left: 10%;
+  @media (width <= $sm) {
+    left: 5%;
+  }
 }
 
 .scrollButton.right {
   right: 10%;
+  @media (width <= $sm) {
+    right: 5%;
+  }
 }
 
 @media (width <= $md) {
@@ -54,4 +59,5 @@
 .scrollButton img {
   width: 60px;
   height: 60px;
+
 }
