@@ -67,6 +67,20 @@ body {
   }
 }
 
+.fontTextFeedback {
+  font-size: 1rem;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.titleFeedback {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
 .titleProducts {
   font-size: 3rem;
   font-family: "Playfair Display", serif;
@@ -610,6 +624,32 @@ header div ul:last-child:hover svg {
   height: 60px;
 }
 
+.balaoFala {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  width: 300px;
+  height: 220px;
+}
+
+.baloon {
+  position: relative;
+}
+
+.client {
+  position: absolute;
+  bottom: 18px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: -9px 10px 37px -15px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -9px 10px 37px -15px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -9px 10px 37px -15px rgba(0, 0, 0, 0.51);
+}
+
 #contato {
   background-color: #d0b780;
 }
@@ -920,6 +960,20 @@ body {
   .title {
     text-align: center;
   }
+}
+
+.fontTextFeedback {
+  font-size: 1rem;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.titleFeedback {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 8px;
 }
 
 .titleProducts {

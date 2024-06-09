@@ -102,6 +102,18 @@ body {
   }
 }
 
+.fontTextFeedback{
+  font-size: 1rem ;
+  line-height: 22px;
+  font-family: $ff-text ;
+}
+.titleFeedback{
+font-size: 1.3rem;
+font-family: $ff-text ;
+font-weight: bold;
+font-style: italic;
+margin-bottom: 8px;
+}
 .titleProducts {
   font-size: 3rem;
   font-family: $ff-title;
