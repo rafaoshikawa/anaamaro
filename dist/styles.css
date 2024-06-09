@@ -340,6 +340,7 @@ header div ul:last-child:hover svg {
 @media (width <= 640px) {
   .contentHero p {
     font-size: 1rem;
+    max-width: 35ch;
   }
 }
 @media (width <= 1280px) {
